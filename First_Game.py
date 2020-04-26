@@ -1,6 +1,8 @@
 import pygame
 import random
+from pygame import mixer
 
+mixer.init()
 pygame.font.init()
 
 # GLOBALS VARS
@@ -12,6 +14,9 @@ block_size = 30
 
 top_left_x = (s_width - play_width) // 2
 top_left_y = s_height - play_height
+
+music = pygame.mixer.music.load("C:/Users/arhaan/Documents/GitHub/Tetris-Pygame/music.mp3")
+pygame.mixer.music.play(-1)
 
 
 # SHAPE FORMATS
